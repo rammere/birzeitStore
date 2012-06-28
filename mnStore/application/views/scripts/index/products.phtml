@@ -1,0 +1,73 @@
+<br /><br />
+<div id="productDiv">
+
+
+<script>
+$(function(){
+    $("#catSelection ").change(function () {
+
+$('#catSelection option:selected').each(function(){
+if($(this).text()=="Bags")
+{
+alert('ok');
+
+}
+});
+        });
+		$('#myGallery').galleryView({
+			panel_width: 400,
+			panel_height: 350,
+			frame_width: 80,
+			frame_height: 60,
+    			panel_animation: 'slide',
+			show_captions: true,
+			show_filmstrip_nav:true ,
+			frame_gap:0,
+			frame_scale:'fit'
+		});
+	});
+</script>
+
+<table cellspacing="0" id="productsTable">
+
+<tr>
+<td>
+    	<ul id="myGallery" style="position:absolute;top:100px;">
+            <li><img src="<?php echo $this->baseUrl()."/images/cloth.png";?>" alt="cloth"/>
+	</li>
+            <li><img src="<?php echo $this->baseUrl()."/images/store bag.png";?>"  alt="bag" />
+</li>
+        </ul>
+
+</td>
+<td id="arrowProduct">
+<img src="<?php echo $this->baseUrl()."/images/arrowProduct1" ?>" alt="arrow" width="70" height="100" />
+</td>
+<td id="productsInfo">
+<p id="name">Name:
+<hr/>
+<p id="color">Color:
+<hr/>
+<p id="desc">Description:
+<hr/>
+<p id="size">Size:
+<hr/>
+<p id="quantity">Quantity:
+<hr/>
+<p id="price">Price:
+<hr>
+<p id="sale">Sale:
+</td>
+<td  id="productsCat">
+
+
+<select id="catSelection" class="target" style={width:130}>
+
+<option value="cloth">Clothes</option>
+<option value="bag">Bags</option>
+</select>
+</td>
+
+</tr>
+</table>
+</div>

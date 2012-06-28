@@ -1,0 +1,108 @@
+body{
+
+}
+
+#newStyle{
+position:absolute;
+background-color:rgb(162,123,105);
+width:1000px;
+height:190px;
+top:50%;
+float:right;
+opacity:.6;
+
+}
+
+#newStyleDiv {
+position:absolute;
+top:210px;
+}
+#mHeader{
+background-color:#e5dcae;
+position:absolute;
+left:15%;
+top:1%;
+height:110px;
+width:940px;
+-m:moz-border-radius: 20px;
+-webkit-border-radius: 20px;
+-khtml-border-radius: 20px;
+border-radius: 20px;
+}
+
+
+
+#mBody{
+	background-color:#c1ca78;
+position:absolute;
+left:15%;
+top:20%;
+height:450px;
+width:940px;
+
+      -moz-border-radius: 20px;
+      -webkit-border-radius: 20px;
+      -khtml-border-radius: 20px;
+      border-radius: 20px;
+
+}
+
+
+#cloth{
+position:relative;
+left:40%;
+top:-6.6%;
+
+}
+#storyCircle{
+
+
+}
+
+
+#productsCircle{
+
+}
+
+#locationCircle{
+
+}
+#contactCircle{
+
+}
+#mHeader a{
+	text-decoration:none;
+
+}
+
+#mHeader table{
+position:absolute;
+top:2px;
+left:48%;
+}
+#mHeader table td {
+	text-align:right;
+	padding-left:8px;
+	padding-right:7px;
+}
+.circles
+{
+position:relative;
+top:-13%;
+left:9%;
+     margin-right:0px;
+}
+
+#mFooter{
+position:absolute;
+	 background-color:rgb(222,219,201);
+left:15%;
+top:100%;
+height:150px;
+width:940px;
+      -moz-border-radius: 20px;
+      -webkit-border-radius: 20px;
+      -khtml-border-radius: 20px;
+      border-radius: 20px;
+
+}

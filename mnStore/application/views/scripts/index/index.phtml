@@ -1,0 +1,31 @@
+<div id="mainSlider">
+heloo
+</div>
+
+<script type="text/javascript">
+
+var mygallery=new simpleGallery({
+	wrapperid: "mainSlider", //ID of main gallery container,
+	dimensions: [940, 450], //width/height of gallery in pixels. Should reflect dimensions of the images exactly
+	imagearray: [
+		["<?php echo $this->baseUrl()."/images/cloth.png"?>", "http://en.wikipedia.org/wiki/Swimming_pool", "_new", "best clothes"],
+		["<?php echo $this->baseUrl()."/images/store bag.png"?>", "http://en.wikipedia.org/wiki/Swimming_pool", "_new", "thats good one :P"],
+	],
+	autoplay: [true,2500,10], //[auto_play_boolean, delay_btw_slide_millisec, cycles_before_stopping_int]
+	persist: true, //remember last viewed slide and recall within same session?
+	fadeduration: 1500, //transition duration (milliseconds)
+	oninit:function(){ //event that fires when gallery has initialized/ ready to run
+		//Keyword "this": references current gallery instance (ie: try this.navigate("play/pause"))
+	},
+	onslide:function(curslide, i){ //event that fires after each slide is shown
+		//Keyword "this": references current gallery instance
+		//curslide: returns DOM reference to current slide's DIV (ie: try alert(curslide.innerHTML)
+		//i: integer reflecting current image within collection being shown (0=1st image, 1=2nd etc)
+	}
+});
+</script>
+<div id="newStyle" >
+</div>
+
+<div id="newStyleDiv"><img src="<?php echo $this->baseUrl()."/images/newStylelogo.png"?>" alt="" />
+</div>

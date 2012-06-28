@@ -1,0 +1,17 @@
+/*Make sure your page contains a valid doctype at the top*/
+div#mainSlider{ //CSS for Simple Gallery Example 1
+position: relative; /*keep this intact*/
+visibility: hidden; /*keep this intact*/
+     -m:moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -khtml-border-radius: 20px;
+    border-radius: 20px;
+z-index:0;
+}
+#mainSlider .gallerydesctext{ //CSS for description DIV of Example 1 (if defined)
+
+text-align: left;
+
+padding: 2px 5px;
+
+}
